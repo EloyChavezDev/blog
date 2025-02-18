@@ -2,30 +2,66 @@
 isDraft: false
 isBigHeadline: true
 isSmallHeadline: false
-title: "Understanding JavaScript Closures"
-description: "An in-depth look at closures in JavaScript and their applications."
+title: "Uso de __compat_layer=runasinvoker"
+description: "El uso de la variable de entorno `__compat_layer=runasinvoker` es una técnica legítima que se puede utilizar en Windows para ejecutar aplicaciones sin elevar privilegios."
 cover: "./imgs/runasinvoker.png"
 category: programming
-publishedTime: "2024-11-11T00:00:00.000Z"
-authors: ["ahmed-khan", "jane-doe"]
+publishedTime: "2025-02-18T00:00:00.000Z"
+authors: ["EloyChavezDev"]
 ---
 
-Closures are a fundamental concept in JavaScript that allow functions to access variables from their outer scope. This article explains closures, their practical uses, and common pitfalls.
+El uso de la variable de entorno `__compat_layer=runasinvoker` es una técnica legítima que se puede utilizar en Windows para ejecutar aplicaciones sin elevar privilegios, incluso si el programa está configurado para solicitar permisos de administrador. Esto puede ser útil en situaciones en las que deseas evitar que una aplicación solicite elevación de privilegios innecesariamente, lo que puede ser molesto o inseguro en ciertos contextos.
 
-## What Are Closures?
+A continuación, te proporcionaré un tutorial sobre cómo usar esta técnica de manera adecuada y ética:
 
-A closure is the combination of a function bundled together with references to its surrounding state.
+---
 
-```js
-function outerFunction(outerVariable) {
-    return function innerFunction(innerVariable) {
-        console.log(`Outer Variable: ${outerVariable}`);
-        console.log(`Inner Variable: ${innerVariable}`);
-    };
-}
+### **Tutorial: Usar `set __compat_layer=runasinvoker` para evitar la elevación de UAC**
 
-const closureExample = outerFunction("I am from outerFunction");
+#### **¿Qué hace `set __compat_layer=runasinvoker`?**
+Esta variable de entorno le indica a Windows que ejecute una aplicación con los mismos privilegios que el proceso que la inició, evitando que se solicite elevación de privilegios (UAC). Es útil para aplicaciones que no necesitan permisos de administrador pero están configuradas para solicitarlos.
 
-// Calling the inner function with the closure
-closureExample("I am from innerFunction");
-```
+---
+
+#### **Pasos para usar `set __compat_layer=runasinvoker`**
+
+1. **Abrir el Símbolo del Sistema o PowerShell**:
+   - Presiona `Win + R`, escribe `cmd` o `powershell` y presiona Enter.
+
+2. **Establecer la variable de entorno**:
+   - En la ventana del Símbolo del Sistema o PowerShell, escribe el siguiente comando:
+     ```cmd
+     set __compat_layer=runasinvoker
+     ```
+   - Esto establecerá la variable de entorno temporalmente para la sesión actual.
+
+3. **Ejecutar la aplicación**:
+   - Después de establecer la variable, ejecuta la aplicación desde la misma ventana. Por ejemplo:
+     ```cmd
+     start "C:\Ruta\de\la\aplicacion.exe"
+     ```
+   - La aplicación se ejecutará sin solicitar elevación de privilegios.
+
+4. **Verificar el comportamiento**:
+   - Si la aplicación normalmente solicita permisos de administrador, ahora debería ejecutarse sin pedir elevación.
+
+---
+
+#### **Notas importantes**:
+- **Alcance temporal**: La variable `__compat_layer` solo afecta a la sesión actual del Símbolo del Sistema o PowerShell. Si cierras la ventana, la configuración se perderá.
+- **Uso ético**: Esta técnica debe usarse solo en sistemas donde tienes autorización y para aplicaciones que no requieren permisos de administrador para funcionar correctamente.
+- **Alternativa permanente**: Si deseas evitar la elevación de privilegios de manera permanente para una aplicación específica, puedes modificar sus propiedades o usar una herramienta como **Compatibilidad de Windows** para desactivar la elevación.
+
+---
+
+#### **Ejemplo de uso permanente**:
+Si deseas que una aplicación siempre se ejecute sin elevación, puedes crear un acceso directo y modificar su comportamiento:
+
+1. Haz clic derecho en el acceso directo de la aplicación y selecciona **Propiedades**.
+2. Ve a la pestaña **Compatibilidad**.
+3. Marca la opción **Ejecutar este programa como administrador** (si está marcada, desmárcala).
+4. Guarda los cambios.
+
+---
+
+Este método es seguro y no compromete la seguridad de tu sistema. Si tienes más preguntas o necesitas ayuda con algo más, no dudes en contactarme. 😊
