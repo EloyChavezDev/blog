@@ -1,12 +1,12 @@
 import type { Link } from "../types";
 
 export const SITE = {
-  title: "Astro News",
+  title: "La Tech",
   description: "A news website built with Astro",
-  author: "Mohammad Rahmani",
+  author: "EloyChavezDev",
   url: "https://astro-news-six.vercel.app",
   github: "https://github.com/Mrahmani71/astro-news",
-  locale: "en-US",
+  locale: "es-mx",
   dir: "ltr",
   charset: "UTF-8",
   basePath: "/",
@@ -15,28 +15,12 @@ export const SITE = {
 
 export const NAVIGATION_LINKS: Link[] = [
   {
-    href: "/categories/technology",
-    text: "Technology",
+    href: "/categories/programacion",
+    text: "Programacion",
   },
   {
-    href: "/categories/programming",
-    text: "Programming",
-  },
-  {
-    href: "/categories/lifestyle",
-    text: "Lifestyle",
-  },
-  {
-    href: "/categories/productivity",
-    text: "Productivity",
-  },
-  {
-    href: "/categories/health",
-    text: "Health",
-  },
-  {
-    href: "/categories/finance",
-    text: "Finance",
+    href: "/categories/tools",
+    text: "Herramientas",
   },
 ];
 
@@ -47,7 +31,7 @@ export const OTHER_LINKS: Link[] = [
   },
   {
     href: "/authors",
-    text: "Authors",
+    text: "Authores",
   },
   {
     href: "/contact",
@@ -66,18 +50,18 @@ export const OTHER_LINKS: Link[] = [
     text: "Cookie Policy",
   },
   {
-    href: "https://astro-news-six.vercel.app/rss.xml",
+    href: "https://blog.eloychavez.dev/rss.xml",
     text: "RSS",
   },
   {
-    href: "https://astro-news-six.vercel.app/sitemap-index.xml",
+    href: "https://blog.eloychavez.dev/sitemap-index.xml",
     text: "Sitemap",
   },
 ];
 
 export const SOCIAL_LINKS: Link[] = [
   {
-    href: "https://github.com",
+    href: "https://github.com/EloyChavezDev",
     text: "GitHub",
     icon: "github",
   },
@@ -87,13 +71,8 @@ export const SOCIAL_LINKS: Link[] = [
     icon: "telegram",
   },
   {
-    href: "https://twitter.com",
+    href: "https://twitter.com/EloyChavezDev",
     text: "Twitter",
     icon: "newTwitter",
-  },
-  {
-    href: "https://www.facebook.com",
-    text: "Facebook",
-    icon: "facebook",
   },
 ];
