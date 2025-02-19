@@ -2,7 +2,7 @@ import type { Link } from "../types";
 
 export const SITE = {
   title: "La Tech",
-  description: "A news website built with Astro",
+  description: "Tips y articulos creados por y para informaticos",
   author: "EloyChavezDev",
   url: "https://blog.eloychavez.dev/",
   github: "https://github.com/EloyChavezDev",
@@ -16,7 +16,7 @@ export const SITE = {
 export const NAVIGATION_LINKS: Link[] = [
   {
     href: "/categories/programacion",
-    text: "Programacion",
+    text: "Programación",
   },
   {
     href: "/categories/tools",
