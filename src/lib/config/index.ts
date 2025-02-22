@@ -1,7 +1,7 @@
 import type { Link } from "../types";
 
 export const SITE = {
-  title: "La Tech",
+  title: "Aprende la Tech",
   description: "Tips y articulos creados por y para informaticos",
   author: "EloyChavezDev",
   url: "https://blog.eloychavez.dev/",
