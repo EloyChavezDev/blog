@@ -45,8 +45,8 @@ const OGImage = new URL(meta.ogImage, Astro.url).href;
   />
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0E6H86RE47"></script>
-<script>
+<script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-0E6H86RE47"></script>
+<script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
