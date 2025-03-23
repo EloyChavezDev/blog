@@ -15,48 +15,68 @@ export const SITE = {
 
 export const NAVIGATION_LINKS: Link[] = [
   {
-    href: "/categories/programacion",
-    text: "Programación",
+    href: "/categories/ciberseguridad",
+    text: "Ciberseguridad",
+  },
+  {
+    href: "/categories/hardware",
+    text: "Hardware",
   },
   {
     href: "/categories/tools",
     text: "Herramientas",
   },
+  {
+    href: "/categories/programacion",
+    text: "Programación",
+  },
+  {
+    href: "/categories/software",
+    text: "Software",
+  },
+  {
+    href: "/categories/tutorial",
+    text: "Tutoriales",
+  },
+  {
+    href: "/categories/windows",
+    text: "Windows",
+  },
 ];
 
 export const OTHER_LINKS: Link[] = [
-  {
-    href: "/about",
-    text: "About us",
-  },
+  // {
+  //   href: "/about",
+  //   text: "About us",
+  // },
   {
     href: "/authors",
-    text: "Authores",
+    text: "Autores",
   },
-  {
-    href: "/contact",
-    text: "Contact",
-  },
-  {
-    href: "/privacy",
-    text: "Privacy",
-  },
-  {
-    href: "/terms",
-    text: "Terms",
-  },
-  {
-    href: "/cookie-policy",
-    text: "Cookie Policy",
-  },
+  // {
+  //   href: "/contact",
+  //   text: "Contact",
+  // },
+  // {
+  //   href: "/privacy",
+  //   text: "Privacy",
+  // },
+  // {
+  //   href: "/terms",
+  //   text: "Terms",
+  // },
+  // {
+  //   href: "/cookie-policy",
+  //   text: "Cookie Policy",
+  // },
   {
     href: "https://blog.eloychavez.dev/rss.xml",
     text: "RSS",
   },
-  {
-    href: "https://blog.eloychavez.dev/sitemap-index.xml",
-    text: "Sitemap",
-  },
+  // {
+  //   href: "https://blog.eloychavez.dev/sitemap-index.xml",
+  //   text: "Sitemap",
+  // },
 ];
 
 export const SOCIAL_LINKS: Link[] = [
@@ -66,7 +86,7 @@ export const SOCIAL_LINKS: Link[] = [
     icon: "github",
   },
   {
-    href: "httpe://www.t.me",
+    href: "https://t.me/Eloychavezdev0",
     text: "Telegram",
     icon: "telegram",
   },
