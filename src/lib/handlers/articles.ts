@@ -28,7 +28,7 @@ export const articlesHandler = {
           article.data.isSmallHeadline === true &&
           mainHeadline.id !== article.id
       )
-      .slice(0, 4);
+      .slice(0, 6);
 
     if (subHeadlines.length === 0)
       throw new Error(
