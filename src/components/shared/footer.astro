@@ -10,20 +10,16 @@ import Icon from "../bases/icon.astro";
       <aside class="flex items-center gap-2">
         <Hashtag />
         <p>
-          <strong class="text-lg">Astro News</strong>
+          <strong class="text-lg">Aprende la Tech</strong>
           <br />
-          A news website built with <a
-            class="underline"
-            href="https://astro.build"
-            target="_blank">Astro</a
-          >.
+          Tips y artículos creados por y para informáticos. 
         </p>
       </aside>
       <nav
         class="flex flex-col gap-4 lg:flex-row lg:flex-wrap text-base lg:text-sm font-semibold"
       >
         <a href="/" class="link link-hover">Home</a>
-        <a href="/articles" class="link link-hover">Articles</a>
+        <a href="/articles" class="link link-hover">Artículos</a>
         {
           NAVIGATION_LINKS.map(({ href, text, target }) => (
             <a href={href} class="link link-hover" target={target ?? "_self"}>
