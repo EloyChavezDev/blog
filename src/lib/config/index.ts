@@ -27,10 +27,10 @@ export const NAVIGATION_LINKS: Link[] = [
     href: "/categories/tools",
     text: "Herramientas",
   },
-  {
-    href: "/categories/programacion",
-    text: "Programación",
-  },
+   // {
+    //  href: "/categories/programacion",
+    //  text: "Programación",
+   // },
   {
     href: "/categories/software",
     text: "Software",
