@@ -11,7 +11,7 @@ export const SITE = {
   dir: "ltr",
   charset: "UTF-8",
   basePath: "/",
-  postsPerPage: 4,
+  postsPerPage: 6,
 };
 
 export const NAVIGATION_LINKS: Link[] = [
