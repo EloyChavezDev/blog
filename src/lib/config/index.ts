@@ -6,6 +6,7 @@ export const SITE = {
   author: "EloyChavezDev",
   url: "https://blog.eloychavez.dev/",
   github: "https://github.com/EloyChavezDev",
+  telegram: "https://t.me/Eloychavezdev0",
   locale: "es-mx",
   dir: "ltr",
   charset: "UTF-8",
